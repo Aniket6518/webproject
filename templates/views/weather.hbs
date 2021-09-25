@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>mainlinks}}
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Aniket Weather-about</title>
+</head>
+<body>
+    {{>headerfile}}
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class="main_searcher align-items-center">
+                <form class="temp_form"  onsubmit="getdata(); return false" >
+                        <input type="text" id="cityname" placeholder="Enter city name" autocomplete="off">
+                        <input type="submit" value="search" id="search_button">
+                    </form>
+                </div>
+                <div class="row">
+
+                <!-- main side div -->
+                <div class="col-md-12 col-8 main_searcher_answer align-items-center">
+                <div class="helphelp align-items-center">
+                <b><h1 style="margin-top: 2rem;" id="display_temp">temperature</h1></b>
+                <h2 style="margin-bottom: 3rem;" id="display_city_name">CITY</h2>
+                <h id="weather">atmosphere</h> 
+                </div>
+                </div>    
+                
+            </div>
+        </div>
+    </div>
+    </div> 
+      <!-- footer -->
+      {{>footerfile}}
+      
+    <script src="js/main.js"></script>
+</body>
+</html>
